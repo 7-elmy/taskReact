@@ -1,0 +1,12 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(45deg, #20104f, #2a1a5f, #20104f, #1a0a3f);
+}
+
+main {
+  flex: 1;
+  padding: 0;
+}

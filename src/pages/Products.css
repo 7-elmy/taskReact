@@ -1,0 +1,43 @@
+.products-page {
+  min-height: 100vh;
+}
+
+.products-hero {
+  background: linear-gradient(45deg, #20104f, #2a1a5f, #20104f, #1a0a3f);
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-hero .container {
+  position: relative;
+  z-index: 10;
+}
+
+.products-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.products-hero-subtitle {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .products-hero-subtitle {
+    font-size: 1.1rem;
+  }
+}

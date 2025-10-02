@@ -1,0 +1,539 @@
+.about {
+  min-height: 100vh;
+}
+
+.about-hero {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #20104f, #2a1a5f, #20104f, #1a0a3f);
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 10;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.mission {
+  padding: 6rem 0;
+  background: #1a0a3f;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mission-text {
+  text-align: right;
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.mission-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #c7b3e8, #2a1a5f);
+  border-radius: 2px;
+}
+
+.mission-text p {
+  font-size: 1.25rem;
+  color: #c7b3e8;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.mission-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(32, 16, 79, 0.3);
+  border: 1px solid #2a1a5f;
+  background: linear-gradient(45deg, #1a0a3f, #20104f);
+}
+
+.image-placeholder .icon {
+  font-size: 5rem;
+}
+
+.values {
+  padding: 6rem 0;
+  background: #20104f;
+}
+
+.values h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e2e8f0;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.values h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #c7b3e8, #2a1a5f);
+  border-radius: 2px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(32, 16, 79, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(32, 16, 79, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #2a1a5f;
+  backdrop-filter: blur(10px);
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(32, 16, 79, 0.4);
+  border-color: #c7b3e8;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #c7b3e8;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.team {
+  padding: 6rem 0;
+  background: #1a0a3f;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e2e8f0;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.team h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #c7b3e8, #2a1a5f);
+  border-radius: 2px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(32, 16, 79, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(32, 16, 79, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #2a1a5f;
+  backdrop-filter: blur(10px);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  background: rgba(32, 16, 79, 0.6);
+  box-shadow: 0 10px 30px rgba(32, 16, 79, 0.3);
+  border-color: #c7b3e8;
+}
+
+.member-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: #20104f;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: #c7b3e8;
+  font-size: 1.125rem;
+}
+
+.contact {
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(45deg, #20104f, #2a1a5f, #20104f, #1a0a3f);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-item {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.contact-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  color: #e2e8f0;
+  font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 4rem 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .mission-content {
+    gap: 3rem;
+  }
+  
+  .mission-text h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 3rem 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .about-hero p {
+    font-size: 1rem;
+  }
+  
+  .mission {
+    padding: 4rem 0;
+  }
+  
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .mission-text {
+    text-align: center;
+  }
+  
+  .mission-text h2 {
+    font-size: 1.75rem;
+  }
+  
+  .mission-text p {
+    font-size: 1rem;
+  }
+  
+  .image-placeholder {
+    max-width: 250px;
+  }
+  
+  .values {
+    padding: 4rem 0;
+  }
+  
+  .values h2 {
+    font-size: 2rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .team {
+    padding: 4rem 0;
+  }
+  
+  .team h2 {
+    font-size: 2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact {
+    padding: 4rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 2rem 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+  
+  .mission {
+    padding: 3rem 0;
+  }
+  
+  .mission-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .mission-text p {
+    font-size: 0.9rem;
+  }
+  
+  .image-placeholder {
+    max-width: 200px;
+  }
+  
+  .image-placeholder .icon {
+    font-size: 3rem;
+  }
+  
+  .values {
+    padding: 3rem 0;
+  }
+  
+  .values h2 {
+    font-size: 1.75rem;
+  }
+  
+  .value-card {
+    padding: 1.5rem;
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.25rem;
+  }
+  
+  .value-card p {
+    font-size: 1rem;
+  }
+  
+  .team {
+    padding: 3rem 0;
+  }
+  
+  .team h2 {
+    font-size: 1.75rem;
+  }
+  
+  .team-member {
+    padding: 1.5rem;
+  }
+  
+  .member-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+  
+  .team-member h3 {
+    font-size: 1.25rem;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+  }
+  
+  .contact {
+    padding: 3rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 1.75rem;
+  }
+  
+  .contact-item {
+    padding: 1.5rem;
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+  
+  .contact-item h3 {
+    font-size: 1.25rem;
+  }
+  
+  .contact-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .mission .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .mission-text {
+    text-align: center;
+  }
+  
+  .mission-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
