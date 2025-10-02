@@ -171,7 +171,7 @@ const ProductDetails = () => {
               </div>
 
               <motion.button 
-                className="btn btn-primary add-to-cart-btn"
+                className="btn btn-primary add-to-cart-btn my-4"
                 onClick={handleAddToCart}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
